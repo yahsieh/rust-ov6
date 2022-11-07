@@ -1,0 +1,6 @@
+[package]
+name = "rust-ov6"
+authors = ["Brian Hsieh <yunganh@uci.edu>"]
+version = "0.0.1"
+license = "GPLv3"
+[workspace]
