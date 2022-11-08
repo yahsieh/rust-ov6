@@ -12,8 +12,8 @@ fn cat(path: &str) -> io::Result<()> {
 }
 
 fn main() -> io::Result<()> {
-    let args: Vec<String> = env::args().collect();
-    for path in &args[1..] {
+    let args: Vec<String> = env::args().skip(1).collect();
+    for path in &args {
         cat(path)?;
     }
     Ok(())
